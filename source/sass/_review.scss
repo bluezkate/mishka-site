@@ -1,0 +1,72 @@
+.review__title {
+    margin: 0;
+    margin: 30px 0 25px 0;
+    font-family: OpenSansBold;
+    font-size: 25px;
+}
+
+.review__wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+.review__text {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.review__author {
+    color: #000000;
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.review__author-name {
+    font-family: OpenSansBold;
+
+    display: block;
+    margin-bottom: 10px;
+}
+
+.review__button {
+    display: inline-block;
+    margin: 0;
+    margin-bottom: 40px;
+    width: 130px;
+    height: 50px;
+    box-sizing: border-box;
+
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+    border: solid 1px #ececec;
+
+    cursor: pointer;
+
+    &_prev {
+        background-image: url('/img/icon-left-arrow.svg');
+    }
+
+    &_next {
+        background-image: url('/img/icon-right-arrow.svg');
+    }
+}
+
+.review__message-button {
+    padding: 17px 84px;
+    margin-bottom: 40px;
+    background-color: transparent;
+    border: 2px solid #444444; 
+
+    font-family: OpenSansBold;
+    font-size: 17px;
+    color: #444444;
+    text-align: center;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
