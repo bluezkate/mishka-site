@@ -9,6 +9,7 @@
     <title>MISHKA</title>
 </head>
 <body>
+    
     <header class="header">
         <div class="container">
             <div class="header__logo logo">
@@ -118,19 +119,22 @@
     <section class="contact-us">
         <div class="container">
             <h2 class="contact-us__title">Контакты</h2>
-            <p  class="contact-us__email">
+            <p  class="contact-us__data">
                 <span>e-mail:</span>
-                <span>info@mimimishkashop.ru</span>
+                <a  class="contact-us__email" href="#">info@mimimishkashop.ru</a>
             </p>
-            <p  class="contact-us__adress">
+            <p  class="contact-us__data">
                 <span>адрес:</span>
-                <span>г.Санкт-Петербург,
-                    ул. Большая Конюшенная,
+                <span  class="contact-us__adress">г.              Санкт-Петербург,
+                    ул. Большая Конюшенная, <br>
                     д. 19/8, офис 101
                 </span>
             </p>
-            <button class="contact-us__message-us">Напишите нам</button>
-            <img src="" alt="Адрес на карте" class="contact-us__map">
+            <div class="contact-us__map-wrapper">
+                <img src="img/map-mobile@1x.jpg" alt="Адрес на карте" class="contact-us__map-img">
+            </div>
+            
+            <button class="contact-us__message-button">Напишите нам</button>
         </div>
         
     </section>
@@ -147,13 +151,35 @@
 
     <footer class="footer">
         <div class="container">
-            <img class="footer__logo" src="" alt="MISHKA">
-            <ul class="footer__social social">
-                <li class="social__item"><a class="social__link" href=""></a></li>
-                <li class="social__item"><a class="social__link" href=""></a></li>
-                <li class="social__item"><a class="social__link" href=""></a></li>
-            </ul>
-            <p class="footer__copyright">Разработано</p>
+            <div class="footer__wrapper">
+                <img class="footer__logo" src="" alt="MISHKA">
+                <ul class="footer__social social">
+                    <li class="social__item"><a class="social__link" href="">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve" class="social__icon">
+                            <use xlink:href="img/icon-insta.svg#instagram"></use>
+                        </svg>
+                    </a></li>
+                    <li class="social__item"><a class="social__link" href="">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px" viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve" class="social__icon">
+                            <use xlink:href="img/icon-fb.svg#facebook"></use>
+                        </svg>
+                    </a></li>
+                    <li class="social__item"><a class="social__link" href="">
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px" viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve" class="social__icon">
+                            <use xlink:href="img/icon-twitter.svg#twitter"></use>
+                        </svg>
+                    </a></li>
+                </ul>
+                <p class="footer__copyright">
+                    <a class="footer__copyright-link" href="">
+                        <span class="footer__copyright-text">Разработано</span>
+                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve" class="footer__copyright-logo" fill="currentColor">
+                            <use xlink:href="img/logo-htmlacademy.svg#htmlacademy"></use>
+                        </svg>
+                    </a>
+                </p>
+            </div>
+            
         </div>
         
     </footer>
