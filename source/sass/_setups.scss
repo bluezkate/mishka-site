@@ -1,0 +1,60 @@
+// fonts
+@font-face {
+    font-family: OpenSansRegular;
+    src: url('/fonts/OpenSansRegular/opensans-regular.woff2'),
+         url('/fonts/OpenSansRegular/opensans-regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: OpenSansBold;
+    src: url('/fonts/OpenSansBold/opensans-bold.woff2'),
+         url('/fonts/OpenSansBold/opensans-bold.woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+// variables
+$tablet-width: 768px;
+$desktop-width: 1250px;
+
+body {
+    font-family: OpenSansRegular;
+    font-size: 17px;
+    color: #444444;
+
+    min-width: 320px;
+}
+
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 260px;
+    padding: 0 30px;
+}
+
+@media (min-width: $tablet-width) {
+    .container {
+        width: 668px;
+        padding: 0 50px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .container {
+        width: 1050px;
+        padding: 0 50px;
+    }
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -2px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
