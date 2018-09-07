@@ -1,3 +1,7 @@
+.contact-us {
+    margin-bottom: 40px;
+}
+
 .contact-us__title {
     margin: 0;
     padding: 0;
@@ -5,6 +9,7 @@
 
     font-family: OpenSansBold;
     font-size: 18px;
+    color: #000000;
 }
 
 .contact-us__data {
@@ -40,7 +45,7 @@
     vertical-align: top;
 }
 
-.contact-us__map-wrapper {
+.contact-us__map-wrapper{
     height: 457px;
     position: relative;
     margin-bottom: 30px;
@@ -66,7 +71,6 @@
 .contact-us__message-button {
     width: 100%;
     padding: 17px 0px;
-    margin-bottom: 40px;
     background-color: transparent;
     border: 2px solid #444444; 
 
@@ -77,4 +81,65 @@
     text-transform: uppercase;
 
     cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+
+    .contact-us {
+        margin-bottom: 60px;
+    }
+
+    .contact-us__title {
+        font-size: 43px;
+
+        margin-bottom: 60px;
+        position: relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+
+            width: 45px;
+            height: 85px;
+
+            background-image: url('/img/icon-flag.svg');
+            right: 0;
+        }
+    }
+
+    .contact-us__info {
+        display: flex;
+
+    }
+
+    .contact-us__data {
+        font-size: 17px;
+    }
+
+    .contact-us__email {
+        margin-right: 55px;
+    }
+
+    .contact-us__adress {
+        width: 230px;
+    }
+
+    .contact-us__map-wrapper{
+        margin-bottom: 50px;
+
+        &:before {
+            left: 310px;
+        }
+    }
+
+    .contact-us__map-img {
+        left: -50px;
+    }
+
+    .contact-us__message-button {
+        display: block;
+        margin: 0 auto;
+        width: 230px;
+    }
+
 }

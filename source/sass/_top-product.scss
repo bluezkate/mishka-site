@@ -1,9 +1,14 @@
+.top-product {
+    margin-bottom: 30px;
+}
+
 .top-product__name {
     position: relative;
 
     display: inline-block;
     font-family: OpenSansBold;
     font-size: 25px;
+    color: #000000;
     
     margin-bottom: 40px;
 
@@ -21,13 +26,6 @@
         text-transform: uppercase;
         color: #63d1bb;
     }
-}
-
-.top-product__title {
-    font-family: OpenSansBold;
-    font-size: 17px;
-    
-    color: #63d1bb;
 }
 
 .top-product__description {
@@ -106,6 +104,10 @@
 
 @media (min-width: 768px) {
 
+    .top-product {
+        margin-bottom: 50px;
+    }
+
     .top-product__wrapper {
         position: static;
         display: flex;
@@ -114,7 +116,7 @@
     }
 
     .top-product__name {
-        font-size: 47px;
+        font-size: 43px;
         margin-bottom: 50px;
 
         &:after {

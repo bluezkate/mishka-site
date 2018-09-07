@@ -48,3 +48,29 @@
 
     color: #63d1bb;
 }
+
+@media (min-width: $tablet-width) {
+
+    .footer__logo {
+        display: block;
+        padding: 53px 0;
+        margin-right: 70px;
+    }
+
+    .footer__wrapper {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .social {
+        width: 140px;
+        justify-content: space-between;
+        padding: 0px;
+        border: none;
+    }
+
+    .footer__copyright {
+        padding: 0px;
+    }
+}

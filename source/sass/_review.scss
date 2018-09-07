@@ -1,8 +1,10 @@
 .review__title {
     margin: 0;
-    margin: 30px 0 25px 0;
+    margin-bottom: 25px;
     font-family: OpenSansBold;
     font-size: 25px;
+
+    color: #000000;
 }
 
 .review__wrapper {
@@ -70,4 +72,52 @@
     text-transform: uppercase;
 
     cursor: pointer;
+}
+
+@media (min-width: $tablet-width) {
+
+    .review {
+        background-image: url('/img/review@1x.jpg');
+        background-repeat: no-repeat;
+
+        margin-bottom: 150px;
+    }
+
+    .review__wrapper {
+        position: relative;
+    }
+
+    .review__title {
+        font-size: 43px;
+        margin: 80px 0 50px;
+    }
+
+    .review__text {
+        font-size: 17px;
+        margin-bottom: 60px;
+    }
+
+    .review__wrapper_sm {
+        display: flex;
+        justify-content: space-between;
+
+        margin-bottom: 50px;
+    }
+
+    .review__author {
+        margin: 0;
+    }
+
+    .review__button {
+        border: none;
+        width: 85px;
+        margin: 0;
+    }
+
+    .review__message-button {
+        position: absolute;
+        width: 175px;
+        right: 0;
+        top: 80px;
+    }
 }
