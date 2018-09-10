@@ -167,11 +167,6 @@
 
 @media (min-width: $desktop-width) {
 
-    .header {
-        position: relative;
-        display: block;
-    }
-
     .header .container {
         width: 1050px;
         padding: 0 50px;
@@ -180,7 +175,11 @@
 
     .logo {
         position: absolute;
-        left: 600px;
+        left: 450px;
+    }
+
+    .navigation {
+        width: 100%;
     }
 
     .navigation__list {
@@ -190,7 +189,22 @@
     .navigation__links {
         position: static;
         display: flex;
+    }
 
+    .navigation__links .navigation__item {
+        padding: 0;
+        padding: 35px 0;
+
+        font-size: 17px;
+
+        &:nth-child(1) {
+            padding-right: 35px;
+            border-right: solid 1px #ececec;
+        }
+
+        &:nth-child(2) {
+            padding-left: 35px;
+        }
     }
 
 }

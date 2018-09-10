@@ -143,3 +143,44 @@
     }
 
 }
+
+@media (min-width: $desktop-width) {
+
+    .contact-us__wrapper {
+        position: relative;
+
+        margin-left: 175px;
+
+        display: flex;
+        flex-direction: row;
+    }
+
+    .contact-us__title {
+        position: absolute;
+
+        font-size: 53px;
+
+        &:after {
+            right: 335px;
+        }
+    }
+
+    .contact-us__info {
+        flex-direction: column;
+
+        margin-top: 180px;
+        margin-right: 50px;
+    }
+
+    .contact-us__map-wrapper{
+        &:before {
+            bottom: 220px;
+            left: 190px;
+        }
+    }
+
+    .contact-us__message-button {
+        position: absolute;
+        bottom: 50px;
+    }
+}

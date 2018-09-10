@@ -77,10 +77,12 @@
 @media (min-width: $tablet-width) {
 
     .review {
+        margin-bottom: 150px;
+    }
+
+    .review .container {
         background-image: url('/img/review@1x.jpg');
         background-repeat: no-repeat;
-
-        margin-bottom: 150px;
     }
 
     .review__wrapper {
@@ -120,4 +122,20 @@
         right: 0;
         top: 80px;
     }
+}
+
+@media (min-width: $desktop-width) {
+
+    .review .container {
+        background-position: 50px 0;
+    }
+
+    .review__wrapper {
+        margin-left: 175px;
+    }
+
+    .review__title {
+        font-size: 53px;
+    }
+
 }

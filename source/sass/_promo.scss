@@ -139,3 +139,47 @@
     }
 }
 
+@media (min-width: $desktop-width) {
+
+    .promo .container {
+        width: 1050px;
+        padding: 0 50px;
+
+        background-image: url('/img/hero-desktop@1x.jpg');
+    }
+
+    .promo__lead {
+        margin: 0;
+        margin: 120px auto 360px;
+
+        width: 620px;
+
+        font-size: 53px;
+    }
+
+    .ad-menu__list {
+        justify-content: flex-start;
+    }
+
+    .ad-menu__item {
+
+        &:nth-child(1) {
+            margin-right: 60px;
+        }
+
+        &:nth-child(2) {
+            margin-right: auto;
+        }
+    }
+
+    .ad-menu__link {
+        display: block;
+
+        font-family: OpenSansBold;
+        text-decoration: none;
+        color: #000000;
+    }
+
+
+
+}

@@ -12,10 +12,13 @@
 
 .about__list {
     margin: 0;
-    // margin-bottom: 30px;
     padding: 0;
 
     list-style-type: none;
+
+    display: flex;
+    flex-direction: column;
+
 }
 
 .about__item {
@@ -50,7 +53,7 @@
 
 }
 
-@media (min-height: 768px) {
+@media (min-width: $tablet-width)  {
 
     .about__title {
         font-size: 43px;
@@ -58,7 +61,7 @@
     }
 
     .about__list {
-        display: flex;
+        flex-direction: row;
     }
 
     .about__column {
@@ -75,5 +78,24 @@
     .about__item {
         font-size: 20px;
         margin-bottom: 60px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+
+    .about__wrapper {
+        margin: 0 175px;
+    }
+
+    .about__title {
+        font-size: 53px;
+    }
+
+    .about__column {
+        
+        &:nth-child(1) {
+            margin-right: 110px;
+        }
+        
     }
 }
