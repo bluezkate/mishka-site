@@ -126,6 +126,14 @@
 
     .ad-menu__link {
         display: none;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
     }
 
     .promo__list {
@@ -136,6 +144,7 @@
         width: 100%;
 
         padding: 30px 0 35px 30px;
+
     }
 }
 

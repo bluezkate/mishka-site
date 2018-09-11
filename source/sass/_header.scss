@@ -105,6 +105,17 @@
         display: flex;
     }
 
+    .navigation__link {
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
+
     .navigation__links {
         position: absolute;
         z-index: 2;
@@ -124,6 +135,16 @@
         padding: 35px 0 35px 80px;
         border-bottom: none;
 
+    }
+
+    .navigation__button {
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
     }
 
     .navigation__search {

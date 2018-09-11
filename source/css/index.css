@@ -144,6 +144,10 @@ body {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex; }
+  .navigation__link:hover {
+    opacity: 0.6; }
+  .navigation__link:active {
+    opacity: 0.3; }
   .navigation__links {
     position: absolute;
     z-index: 2;
@@ -157,6 +161,10 @@ body {
     margin: 0;
     padding: 35px 0 35px 80px;
     border-bottom: none; }
+  .navigation__button:hover {
+    opacity: 0.6; }
+  .navigation__button:active {
+    opacity: 0.3; }
   .navigation__search {
     position: relative;
     border-left: solid 1px #ececec;
@@ -321,6 +329,10 @@ body {
     font-size: 15px; }
   .ad-menu__link {
     display: none; }
+    .ad-menu__link:hover {
+      opacity: 0.6; }
+    .ad-menu__link:active {
+      opacity: 0.3; }
   .promo__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;

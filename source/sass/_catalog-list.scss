@@ -1,0 +1,133 @@
+.catalog__heading {
+    background-color: #f1f1f1;
+    width: 320px;
+    margin: 0 auto;
+
+    margin-bottom: 30px;
+}
+
+.catalog__heading-title {
+    margin: 0;
+    padding: 75px 0;
+
+    font-family: OpenSansBold;
+    font-size: 27px;
+    text-align: center;
+}
+
+.catalog__img {
+    margin-bottom: 30px;
+}
+
+.catalog__list {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+}
+
+.catalog__item {
+    margin-bottom: 30px;
+}
+
+.catalog__img {
+    display: block;
+}
+
+.catalog__description, .catalog__price {
+    margin: 0;
+}
+
+.catalog__description {
+    width: 206px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    border-bottom: solid 1px #ececec;
+}
+
+.catalog__item-title, .catalog__item-characteristics {
+    display: block;
+}
+
+.catalog__item-title {
+    font-family: OpenSansBold;
+    font-size: 17px;
+
+    margin-bottom: 20px;
+}
+
+.catalog__item-characteristics {
+    font-size: 13px;
+
+    margin-bottom: 30px;
+}
+
+.catalog__price {
+    padding: 0 30px 30px;
+    
+    border-bottom: solid 1px #ececec;
+}
+
+.catalog__price-text {
+    font-family: OpenSansBold;
+    font-size: 15px;
+}
+
+@media (min-width: $tablet-width) {
+    .catalog__heading {
+        width: 768px;
+    }
+
+    .catalog__heading-title {
+        padding: 105px 0 75px;
+
+        font-size: 43px;
+    }
+
+    .catalog__item {
+        display: flex;
+
+        border: solid 1px #ececec;
+    }
+
+    .catalog__img {
+        margin: 0;
+        padding: 0;
+    }
+
+    .catalog__info {
+        display: flex;
+        flex-direction: column;
+        padding: 30px;
+        width: 100%;
+    }
+
+    .catalog__description {
+        width: 100%;
+        margin-bottom: auto;
+
+        border: none;
+    }
+
+    .catalog__item-title {
+        font-size: 20px;
+    }
+
+    .catalog__item-characteristics {
+        font-size: 15px;
+    }
+
+    .catalog__price {
+        padding-top: 30px;
+        padding-left: 0;
+        padding-bottom: 0;
+        
+        border-bottom: none;
+        border-top: solid 1px #ececec;
+    }
+    
+    .catalog__price-text {
+        font-size: 17px;
+    }
+
+}
