@@ -69,6 +69,10 @@
     cursor: pointer;
 }
 
+.promo__ad-menu {
+    display: none;
+}
+
 @media (min-width: $tablet-width) {
 
     .header {
@@ -184,6 +188,38 @@
             left: 30px;
         }
     }
+
+    .promo__ad-menu {
+        display: block;
+        padding-top: 27px;
+
+        position: absolute;
+        z-index: 2;
+        right: 50px;
+    }
+
+    .ad-menu__list {
+        display: flex;
+        flex-direction: row;
+
+        margin: 0;
+        padding: 0;
+        
+        list-style-type: none;
+        font-size: 15px;
+    }
+
+    .ad-menu__link {
+        display: none;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        &:active {
+            opacity: 0.3;
+        }
+    }
 }
 
 @media (min-width: $desktop-width) {
@@ -226,6 +262,29 @@
         &:nth-child(2) {
             padding-left: 35px;
         }
+    }
+
+    .ad-menu__list {
+        justify-content: flex-start;
+    }
+
+    .ad-menu__item {
+
+        &:nth-child(1) {
+            margin-right: 60px;
+        }
+
+        &:nth-child(2) {
+            margin-right: 505px;
+        }
+    }
+
+    .ad-menu__link {
+        display: block;
+
+        font-family: OpenSansBold;
+        text-decoration: none;
+        color: #000000;
     }
 
 }

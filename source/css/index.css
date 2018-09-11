@@ -108,6 +108,9 @@ body {
   background-color: transparent;
   cursor: pointer; }
 
+.promo__ad-menu {
+  display: none; }
+
 @media (min-width: 768px) {
   .header {
     border-bottom: solid 1px #ececec; }
@@ -190,7 +193,33 @@ body {
       opacity: 0.3;
       width: 20px;
       height: 19px;
-      left: 30px; } }
+      left: 30px; }
+  .promo__ad-menu {
+    display: block;
+    padding-top: 27px;
+    position: absolute;
+    z-index: 2;
+    right: 50px; }
+  .ad-menu__list {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 15px; }
+  .ad-menu__link {
+    display: none; }
+    .ad-menu__link:hover {
+      opacity: 0.6; }
+    .ad-menu__link:active {
+      opacity: 0.3; } }
 
 @media (min-width: 1150px) {
   .header .container {
@@ -220,7 +249,21 @@ body {
       padding-right: 35px;
       border-right: solid 1px #ececec; }
     .navigation__links .navigation__item:nth-child(2) {
-      padding-left: 35px; } }
+      padding-left: 35px; }
+  .ad-menu__list {
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+        -ms-flex-pack: start;
+            justify-content: flex-start; }
+  .ad-menu__item:nth-child(1) {
+    margin-right: 60px; }
+  .ad-menu__item:nth-child(2) {
+    margin-right: 505px; }
+  .ad-menu__link {
+    display: block;
+    font-family: OpenSansBold;
+    text-decoration: none;
+    color: #000000; } }
 
 .promo {
   margin-bottom: 30px; }
@@ -233,9 +276,6 @@ body {
   background-repeat: no-repeat;
   -webkit-background-size: cover;
           background-size: cover; }
-
-.promo__ad-menu {
-  display: none; }
 
 .promo__lead {
   display: block;
@@ -301,38 +341,11 @@ body {
     width: 668px;
     padding: 0 50px;
     background-image: url("/img/hero-tablet@1x.jpg"); }
-  .promo__ad-menu {
-    display: block;
-    padding-top: 27px; }
   .promo__lead {
     display: block;
     font-size: 43px;
-    padding: 0;
-    margin: 110px auto 370px; }
-  .ad-menu__list {
-    display: -webkit-box;
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    font-size: 15px; }
-  .ad-menu__link {
-    display: none; }
-    .ad-menu__link:hover {
-      opacity: 0.6; }
-    .ad-menu__link:active {
-      opacity: 0.3; }
+    padding: 110px 0 370px 0;
+    margin: 0 auto; }
   .promo__list {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -349,24 +362,10 @@ body {
     padding: 0 50px;
     background-image: url("/img/hero-desktop@1x.jpg"); }
   .promo__lead {
-    margin: 0;
-    margin: 120px auto 360px;
+    padding: 120px 0 360px 0;
+    margin: 0 auto;
     width: 620px;
-    font-size: 53px; }
-  .ad-menu__list {
-    -webkit-box-pack: start;
-    -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-            justify-content: flex-start; }
-  .ad-menu__item:nth-child(1) {
-    margin-right: 60px; }
-  .ad-menu__item:nth-child(2) {
-    margin-right: auto; }
-  .ad-menu__link {
-    display: block;
-    font-family: OpenSansBold;
-    text-decoration: none;
-    color: #000000; } }
+    font-size: 53px; } }
 
 .top-product {
   margin-bottom: 30px; }
