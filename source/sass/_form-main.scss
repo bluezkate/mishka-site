@@ -1,0 +1,223 @@
+.form__heading {
+    padding: 60px 0;
+    margin: 0 auto;
+    margin-bottom: 30px;
+
+    width: 320px;
+
+    background-color: #f1f1f1;
+}
+
+.form__heading-text {
+    font-family: OpenSansBold;
+    font-size: 27px; 
+
+    text-align: center;
+}
+
+.form__text {
+    margin: 0;
+    margin-bottom: 30px;
+
+    font-size: 13px;
+    line-height: 24px;
+}
+
+.form__title {
+    display: block;
+    margin-bottom: 30px;
+    position: relative;
+
+    font-family: OpenSansBold;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #62d1ba;
+
+    &:after {
+        content: '';
+        position: absolute;
+
+        width: 200px;
+        height: 1px;
+
+        background-color: #62d1ba;
+
+        right: 0;
+        top: 10px;
+    }
+}
+
+.form__label {
+    &_checkbox, &_radio{
+        padding-left: 65px;
+        position: relative;
+
+        display: inline-block;
+
+        color: #262626;
+
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.6;
+        }
+    }
+}
+
+.form__checkbox, .form__radio {
+    font-family: OpenSansBold;
+    font-size: 17px;
+}
+
+.form__checkbox {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+// Checkbox Styling
+.form__input_checkbox + .checkbox-indication {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+    box-sizing: border-box;
+
+    border: solid 2px #444444;
+
+    top: -6px;
+    left: 0;
+}
+
+.form__input_checkbox:focus + .checkbox-indication {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.form__input_checkbox:checked + .checkbox-indication::before {
+    content: '';
+    position: absolute;
+    width: 24px;
+    height: 17px;
+
+    background-image: url('/img/icon-tick.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    top: 8px;
+    left: 4px;
+}
+// Checkbox styling end
+
+.form__radio {
+    margin: 0;
+    margin-bottom: 20px;
+
+    &:last-child {
+        margin-bottom: 40px;
+    }
+}
+
+// Radio styling
+.form__input_radio + .radio-indication {
+    position: absolute;
+    width: 38px;
+    height: 38px;
+
+    border: 2px solid #444444;
+    border-radius: 100px;
+    box-sizing: border-box;
+
+    top: -7px;
+    left: 0;
+}
+
+.form__input_radio:focus + .radio-indication {
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.form__input_radio:checked + .radio-indication::before {
+
+    content: '';
+    position: absolute;
+    width: 0px;
+    height: 0px;
+
+    border: 8px solid #62d1ba;
+    border-radius: 100px;
+
+    top: 9px;
+    left: 9px;
+}
+// Radio styling end
+
+.form__input, .form__inputArea {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.form__label_text {
+    display: block;
+
+    font-family: OpenSansBold;
+    font-size: 17px;
+}
+
+.form__input_text {
+    width: 100%;
+
+    padding: 20px 0;
+
+    border: none;
+    border-bottom: solid 2px #444444;
+
+    &::placeholder {
+        color: #d2d2d2;
+    }
+}
+
+.form__phone-title, .form__email-title {
+    margin-bottom: 0px;
+}
+
+.form__inputArea {
+    margin: 0;
+}
+
+.form__input_textarea {
+    width: 260px;
+    height: 140px;
+
+    padding: 18px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+
+    resize: none;
+
+    border: solid 2px #444444;
+
+    &::placeholder {
+        color: #d2d2d2;
+    }
+}
+
+.form__extra-text {
+    font-size: 14px;
+    display: block;
+    margin-bottom: 30px;
+}
+
+.form__send-button {
+    width: 100%;
+    padding: 17px 0px;
+    margin-bottom: 55px;
+    background-color: transparent;
+    border: 2px solid #444444; 
+
+    font-family: OpenSansBold;
+    font-size: 17px;
+    color: #444444;
+    text-align: center;
+    text-transform: uppercase;
+
+    cursor: pointer;
+}
