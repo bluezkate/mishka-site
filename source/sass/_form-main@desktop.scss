@@ -1,0 +1,109 @@
+@media (min-width: $desktop-width) {
+    
+    .form__heading {
+        width: 1150px;
+        margin-bottom: 130px;
+    }
+
+    .form__heading-text {
+        font-size: 53px;
+    }
+
+    .form__text {
+        width: 700px;
+        margin-left: 170px;
+    }
+
+    .form__type-wrapper, .form__personal-data-wrapper, 
+    .form__input {
+        width: 700px;
+        margin-right: 30px;
+        padding-right: 150px;
+    }
+    
+    .form__title {
+        margin-left: 60px;
+    }
+
+    .form__color {
+        padding-bottom: 0;
+    }
+
+    .form__color-wrapper {
+        width: 730px;
+        justify-content: space-between;
+        padding-right: 150px;
+    }
+
+    .form__checkbox {
+        margin-right: 0;
+        margin-bottom: 65px;
+
+        font-size: 19px;
+    }
+
+    .form__label {
+        &_checkbox, &_radio{
+            padding-left: 80px;
+        }
+    }
+
+    // Checkbox styling 
+    .form__input_checkbox + .checkbox-indication {
+        width: 55px;
+        height: 55px;
+        
+        top: -17px;
+        left: 0;
+    }
+
+    .form__input_checkbox:checked + .checkbox-indication::before {
+        width: 34px;
+        height: 24px;
+    
+        top: 12px;
+        left: 10px;
+    }
+    // Checkbox styling end
+
+
+    // Radio styling
+    .form__input_radio + .radio-indication {
+        width: 52px;
+        height: 52px;
+
+        top: -14px;
+    }
+
+    .form__input_radio:checked + .radio-indication::before {
+
+        border: 10px solid #62d1ba;
+    
+        top: 14px;
+        left: 14px;
+    }
+    // Radio styling end
+
+    .form__label_text {
+        font-size: 19px;
+        color: #262626;
+    }
+
+    .form__inputArea {
+        margin-right: 30px;
+        padding-right: 150px;
+    }
+
+    .form__input_textarea {
+        width: 700px;
+    }
+
+    .form__extra-text {
+        margin-right: 180px;
+    }
+
+    .form__send-button {
+        margin-left: 170px;
+    }
+
+}

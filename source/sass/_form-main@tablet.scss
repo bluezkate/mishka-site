@@ -1,0 +1,131 @@
+
+@media (min-width: $tablet-width) {
+
+    .form__heading {
+        width: 768px;
+        margin-bottom: 80px;
+    }
+
+    .form__text {
+        margin-bottom: 15px;
+    
+        font-size: 17px;
+        line-height: 30px;
+    }
+
+    .form__data {
+        display: flex;
+        justify-content: space-between;
+        padding: 65px 0;
+    }
+
+    .form__data .container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .form__title {
+        &::after {
+            content: none;
+        }
+    }
+
+    .form__type {
+        padding-bottom: 20px;
+    }
+
+    .form__type-wrapper {
+        display: flex;
+        flex-direction: column;
+
+        width: 500px;
+    }
+
+    .form__radio {
+        margin-bottom: 60px;
+    }
+
+    .form__color {
+        background-color: #f1f1f1;
+        padding-bottom: 20px;
+    }
+
+    .form__color-wrapper {
+        width: 500px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .form__checkbox {
+        width: 200px;
+        margin-right: 40px;
+    }
+
+    .form__personal-data {
+        padding: 50px 0;
+    }
+
+    .form__personal-data .form__title {
+        padding-top: 18px;
+    }
+
+    .form__personal-data-wrapper {
+        width: 500px;
+    }
+
+    .form__input {
+        width: 500px;
+        display: flex;
+    }
+
+    .form__label_text {
+        align-self: center;
+
+        margin-right: 25px;
+    }
+
+    .form__input_text {
+        padding-left: 20px;
+    }
+
+    .form__contact-data {
+        padding: 50px 0;
+        background-color: #f1f1f1;
+    }
+
+    .form__contact-data .form__data {
+        padding: 0;
+    }
+
+    .form__contact-data .form__title {
+        padding-top: 18px;
+    }
+
+    .form__input_textarea {
+        width: 500px;
+    }
+
+    .form__send {
+        margin-bottom: 50px;
+    }
+
+    .form__send .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .form__extra-text {
+        margin-bottom: 0;
+
+        font-size: 17px;
+    }
+
+    .form__send-button {
+        width: 230px;
+        order: -1;
+
+        margin-bottom: 0;
+    }
+
+}

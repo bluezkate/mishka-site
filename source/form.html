@@ -55,118 +55,148 @@
                 <p class="form__text">
                     Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.
                 </p>
-                <div class="form__type">
+            </div>
+
+            <div class="form__data form__type">
+                <div class="container">
                     <b class="form__title">Тип</b>
-                    <p class="form__radio">
-                        <label class="form__label_radio" for="typeAccessory">
-                        <input class="form__input_radio visually-hidden" type="radio" name="productType" id="typeAccessory" checked>
-                        <span class="radio-indication"></span>
-                        Аксессуар для интерьера
-                        </label>  
-                    </p>
-                    <p class="form__radio">
-                        <label class="form__label_radio" for="typeToy">
-                            <input class="form__input_radio visually-hidden" type="radio" name="productType" id="typeToy">
+                    <div class="form__type-wrapper">
+                        <p class="form__radio">
+                            <label class="form__label_radio" for="typeAccessory">
+                            <input class="form__input_radio visually-hidden" type="radio" name="productType" id="typeAccessory" checked>
                             <span class="radio-indication"></span>
-                            Детская игрушка
-                        </label>
-                    </p>
+                            Аксессуар для интерьера
+                            </label>  
+                        </p>
+                        <p class="form__radio">
+                            <label class="form__label_radio" for="typeToy">
+                                <input class="form__input_radio visually-hidden" type="radio" name="productType" id="typeToy">
+                                <span class="radio-indication"></span>
+                                Детская игрушка
+                            </label>
+                        </p>
+                    </div>  
                 </div>
+                
+                
+            </div>
 
-                <div class="form__color">
+            <div class="form__data form__color">
+                <div class="container">
                     <b class="form__title">Цвет</b>
-                    <p class="form__checkbox">
-                        <label class="form__label_checkbox" for="colorWhite">
-                            <input class="form__input_checkbox visually-hidden" id="colorWhite" type="checkbox" name="formColor" checked>
-                            <span class="checkbox-indication"></span>
-                            Белый
-                        </label>
-                    </p>
-                    <p class="form__checkbox">
-                        <label class="form__label_checkbox" for="colorGray">
-                            <input class="form__input_checkbox visually-hidden" id="colorGray" type="checkbox" name="formColor" >
-                            <span class="checkbox-indication"></span>
-                            Серый
-                        </label>
-                    </p>
-                    <p class="form__checkbox">
-                        <label class="form__label_checkbox" for="colorTiffany">
-                            <input class="form__input_checkbox visually-hidden" id="colorTiffany" type="checkbox" name="formColor" checked>
-                            <span class="checkbox-indication"></span>
-                            &#171;Тиффани&#187;
-                        </label>
-                    </p>
-                    <p class="form__checkbox">
-                        <label class="form__label_checkbox" for="colorBlack">
-                            <input class="form__input_checkbox visually-hidden" id="colorBlack" type="checkbox" name="formColor" checked>
-                            <span class="checkbox-indication"></span>
-                            Черный
-                        </label>
-                    </p>
-                    <p class="form__checkbox">
-                        <label class="form__label_checkbox" for="colorPink">
-                            <input class="form__input_checkbox visually-hidden" id="colorPink" type="checkbox" name="formColor">
-                            <span class="checkbox-indication"></span>
-                            Розовый
-                        </label>
-                    </p>
-                    <p class="form__checkbox">
-                        <label class="form__label_checkbox" for="colorOrange">
-                            <input class="form__input_checkbox visually-hidden" id="colorOrange" type="checkbox" name="formColor">
-                            <span class="checkbox-indication"></span>
-                            Оранжевый
-                        </label>
-                    </p>
+                    <div class="form__color-wrapper">
+                        <p class="form__checkbox">
+                            <label class="form__label_checkbox" for="colorWhite">
+                                <input class="form__input_checkbox visually-hidden" id="colorWhite" type="checkbox" name="formColor" checked>
+                                <span class="checkbox-indication"></span>
+                                Белый
+                            </label>
+                        </p>
+                        <p class="form__checkbox">
+                            <label class="form__label_checkbox" for="colorGray">
+                                <input class="form__input_checkbox visually-hidden" id="colorGray" type="checkbox" name="formColor" >
+                                <span class="checkbox-indication"></span>
+                                Серый
+                            </label>
+                        </p>
+                        <p class="form__checkbox">
+                            <label class="form__label_checkbox" for="colorTiffany">
+                                <input class="form__input_checkbox visually-hidden" id="colorTiffany" type="checkbox" name="formColor" checked>
+                                <span class="checkbox-indication"></span>
+                                &#171;Тиффани&#187;
+                            </label>
+                        </p>
+                        <p class="form__checkbox">
+                            <label class="form__label_checkbox" for="colorBlack">
+                                <input class="form__input_checkbox visually-hidden" id="colorBlack" type="checkbox" name="formColor" checked>
+                                <span class="checkbox-indication"></span>
+                                Черный
+                            </label>
+                        </p>
+                        <p class="form__checkbox">
+                            <label class="form__label_checkbox" for="colorPink">
+                                <input class="form__input_checkbox visually-hidden" id="colorPink" type="checkbox" name="formColor">
+                                <span class="checkbox-indication"></span>
+                                Розовый
+                            </label>
+                        </p>
+                        <p class="form__checkbox">
+                            <label class="form__label_checkbox" for="colorOrange">
+                                <input class="form__input_checkbox visually-hidden" id="colorOrange" type="checkbox" name="formColor">
+                                <span class="checkbox-indication"></span>
+                                Оранжевый
+                            </label>
+                        </p>
+                    </div> 
                 </div>
+            </div>
 
-                <div class="form__personal-data">
+            <div class="form__data form__personal-data">
+                <div class="container">
                     <b class="form__title">ФИО</b>
-                    <p class="form__input">
-                        <label class="form__label_text" for="inputName">
-                            Имя:
-                        </label>
-                        <input type="text" class="form__input_text" placeholder="Введите ваше имя*" id="inputName">
-                            
-                    </p>
-                    <p class="form__input">
-                        <label class="form__label_text" for="inpuLastname">
-                            Фамилия:
-                        </label>
-                        <input type="text" class="form__input_text" placeholder="Укажите фамилию*" id="inpuLastname">
-                    </p>
-                    <p class="form__input">
-                        <label class="form__label_text" for="inputPatronymic">
-                            Отчество:
-                        </label>
-                        <input type="text" class="form__input_text" placeholder="Отчество, если желаете" id="inputPatronymic">
-                    </p>
+                    <div class="form__personal-data-wrapper">
+                        <p class="form__input">
+                            <label class="form__label_text" for="inputName">
+                                Имя:
+                            </label>
+                            <input type="text" class="form__input_text" placeholder="Введите ваше имя*" id="inputName">
+                                
+                        </p>
+                        <p class="form__input">
+                            <label class="form__label_text" for="inpuLastname">
+                                Фамилия:
+                            </label>
+                            <input type="text" class="form__input_text" placeholder="Укажите фамилию*" id="inpuLastname">
+                        </p>
+                        <p class="form__input">
+                            <label class="form__label_text" for="inputPatronymic">
+                                Отчество:
+                            </label>
+                            <input type="text" class="form__input_text" placeholder="Отчество, если желаете" id="inputPatronymic">
+                        </p>
+                    </div> 
                 </div>
+                
+            </div>
 
-                <div class="form__phone">
-                    <b class="form__title form__phone-title">Тел</b>
-                    <p class="form__input">
-                        <input type="text" class="form__input_text" placeholder="+7 XXX XX XX*">
-                    </p>
+            <div class="form__contact-data">
+                <div class="container">
+                    <div class="form__data form__phone">
+                        <b class="form__title form__phone-title">Тел</b>
+                        <p class="form__input form__input_phone">
+                            <input type="text" class="form__input_text" placeholder="+7 XXX XX XX*">
+                        </p>
+                    </div>
+
+                    <div class="form__data form__email">
+                        <b class="form__title form__email-title">E-mail</b>
+                        <p class="form__input form__input_email">
+                            <input type="text" class="form__input_text" placeholder="Ваш E-mail*">
+                        </p>
+                    </div>
                 </div>
+                
+            </div>
+            
 
-                <div class="form__email">
-                    <b class="form__title form__email-title">E-mail</b>
-                    <p class="form__input">
-                        <input type="text" class="form__input_text" placeholder="Ваш E-mail*">
-                    </p>
-                </div>
-
-                <div class="form__extra">
+            <div class="form__data form__extra">
+                <div class="container">
                     <b class="form__title">Доп</b>
                     <p class="form__inputArea">
-                    <textarea name="" id="" cols="30" rows="9" class="form__input_textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea> 
-                    <span class="form__extra-text">*Поля обязательны для заполнения</span>
-                    </p> 
-
+                        <textarea name="" id="" cols="30" rows="9" class="form__input_textarea" placeholder="Опишите все ваши пожелания к заказу"></textarea> 
+                        
+                    </p>  
                 </div>
-
-                <button class="form__send-button">Отправить заказ</button>
+                
             </div>
+
+            <div class="form__send">
+                <div class="container">
+                    <span class="form__extra-text">*Поля обязательны для заполнения</span>
+                    <button class="form__send-button">Отправить заказ</button>
+                </div>
+            </div>
+
         </section>
         
     </main>

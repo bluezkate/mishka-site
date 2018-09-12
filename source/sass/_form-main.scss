@@ -12,6 +12,8 @@
     font-family: OpenSansBold;
     font-size: 27px; 
 
+    color: #231f20;
+
     text-align: center;
 }
 
@@ -170,6 +172,8 @@
     border: none;
     border-bottom: solid 2px #444444;
 
+    background-color: transparent;
+
     &::placeholder {
         color: #d2d2d2;
     }
@@ -221,3 +225,6 @@
 
     cursor: pointer;
 }
+
+@import '_form-main@tablet.scss';
+@import '_form-main@desktop.scss';
