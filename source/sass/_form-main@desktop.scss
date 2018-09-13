@@ -77,7 +77,7 @@
 
     .form__input_radio:checked + .radio-indication::before {
 
-        border: 10px solid #62d1ba;
+        border: 11px solid #62d1ba;
     
         top: 14px;
         left: 14px;
@@ -87,6 +87,17 @@
     .form__label_text {
         font-size: 19px;
         color: #262626;
+    }
+
+    .form__input-icon {
+    
+        &_phone {
+            right: 160px;
+        }
+    
+        &_mail {
+            right: 158px;
+        }
     }
 
     .form__inputArea {

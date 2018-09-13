@@ -59,10 +59,6 @@
         color: #262626;
 
         cursor: pointer;
-
-        &:hover {
-            opacity: 0.6;
-        }
     }
 }
 
@@ -87,7 +83,16 @@
 
     top: -6px;
     left: 0;
+
+    &:hover {
+        border-color: #62d1ba;
+    }
+
+    &:active {
+        border-color: #c7c7c7;
+    }
 }
+
 
 .form__input_checkbox:focus + .checkbox-indication {
     outline: thin dotted;
@@ -130,6 +135,14 @@
 
     top: -7px;
     left: 0;
+
+    &:hover {
+        border-color: #62d1ba;
+    }
+
+    &:active {
+        border-color: #c7c7c7;
+    }
 }
 
 .form__input_radio:focus + .radio-indication {
@@ -155,6 +168,7 @@
 .form__input, .form__inputArea {
     margin: 0;
     margin-bottom: 25px;
+
 }
 
 .form__label_text {
@@ -174,13 +188,41 @@
 
     background-color: transparent;
 
+    &:hover, &:focus {
+        border-color: #62d1ba;
+    }
+
     &::placeholder {
         color: #d2d2d2;
     }
 }
 
+.form__input_text:hover + .form__input-icon, .form__input_text:focus .form__input-icon{
+    color: #62d1ba;
+}
+
 .form__phone-title, .form__email-title {
     margin-bottom: 0px;
+}
+
+.form__input_phone, .form__input_email {
+    position: relative;
+}
+
+.form__input-icon {
+    position: absolute;
+    
+    top: 18px;
+
+    color: #c7c7c7;
+
+    &_phone {
+        right: 10px;
+    }
+
+    &_mail {
+        right: 8px;
+    }
 }
 
 .form__inputArea {
@@ -199,6 +241,10 @@
 
     border: solid 2px #444444;
 
+    &:hover, &:focus {
+        border-color: #62d1ba;
+    }
+
     &::placeholder {
         color: #d2d2d2;
     }
@@ -212,18 +258,7 @@
 
 .form__send-button {
     width: 100%;
-    padding: 17px 0px;
     margin-bottom: 55px;
-    background-color: transparent;
-    border: 2px solid #444444; 
-
-    font-family: OpenSansBold;
-    font-size: 17px;
-    color: #444444;
-    text-align: center;
-    text-transform: uppercase;
-
-    cursor: pointer;
 }
 
 @import '_form-main@tablet.scss';

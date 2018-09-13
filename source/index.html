@@ -14,7 +14,7 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__logo logo">
-                    <a class="logo__link" href="">
+                    <a class="logo__link" href="index.html">
                         <picture>
                             <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
                             <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
@@ -31,8 +31,22 @@
                             <li class="navigation__item"><a class="navigation__link" href="form.html">Вязание на заказ</a></li>
                         </div>
                         <div class="navigation__buttons">
-                            <li class="navigation__item navigation__search"><button class="navigation__button"><span class="navigation__text navigation__text_search">Поиск по сайту</span></button></li>
-                            <li class="navigation__item navigation__cart"><button class="navigation__button"><span class="navigation__text navigation__text_cart">Корзина: пока пуста</span></button></li>
+                            <li class="navigation__item navigation__search">
+                                <button class="navigation__button">
+                                    <svg width="18" height="18" class="navigation__icon" fill="currentColor">
+                                        <use xlink:href="img/sprite.svg#search"></use>
+                                    </svg>
+                                    <span class="navigation__text navigation__text_search">Поиск по сайту</span>
+                                </button>
+                            </li>
+                            <li class="navigation__item navigation__cart">
+                                <button class="navigation__button">
+                                    <svg width="20" height="19" class="navigation__icon" fill="currentColor">
+                                        <use xlink:href="img/sprite.svg#cart"></use>
+                                    </svg>
+                                    <span class="navigation__text navigation__text_cart">Корзина: пока пуста</span>
+                                </button>
+                            </li>
                         </div>
                     </ul>   
                 </nav>
@@ -50,18 +64,22 @@
     <section class="promo">
         <div class="container">
             <h1 class="visually-hidden">Mishka - вязанные товары для дома</h1>
-            <!-- <div class="promo__ad-menu ad-menu">
-                <ul class="ad-menu__list ">
-                    <li class="ad-menu__item"><a class="ad-menu__link" href="">Новые поступления</a></li>
-                    <li class="ad-menu__item"><a class="ad-menu__link" href="">Распродажа</a></li>
-                    <li class="ad-menu__item">Бесплатная доставка по России</li>
-                </ul>
-            </div>   -->
             <div class="promo__wrapper">
                 <b class="promo__lead">Милые штуки ручной работы для дома</b>
                 <ul class="promo__list">
-                    <li class="promo__item promo__item_interior"><a class="promo__link" href="">Предметы интерьера</a></li>
-                    <li class="promo__item promo__item_toys"><a class="promo__link" href="">Детские игрушки</a></li>
+                    <li class="promo__item promo__item_interior">
+                        <a class="promo__link" href="">
+                            <span class="promo__link-text">Предметы интерьера</span>
+                        </a>
+                    </li>
+                    <li class="promo__item promo__item_toys">
+                        <a class="promo__link" href="">
+                            <span class="promo__link-text">Детские игрушки</span>
+                        </a>
+                    </li>
+
+                    <!-- <li class=" promo__item_interior"><button class="promo__button promo__item">Предметы интерьера</button></li>
+                    <li class=" promo__item_toys"><button class="promo__button promo__item">Детские игрушки</button></li> -->
                 </ul>
             </div>
             
@@ -92,7 +110,7 @@
                         </tr>
                     </table>
                     <p class="top-product__price" >Цена: 990 руб.</p>
-                    <button class="top-product__order-button">Заказать</button>
+                    <button class="button top-product__order-button">Заказать</button>
                 </div>   
                 <picture class="top-product__image">
                     <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg">
@@ -142,7 +160,7 @@
                         <button class="review__button review__button_next"><span class="visually-hidden">Следующий отзыв</span>
                     </div>
                 </div>
-                <button class="review__message-button">Написать</button>
+                <button class="button review__message-button">Написать</button>
                 
             </div>
             
@@ -176,7 +194,7 @@
                     
                 </div>
                 
-                <button class="contact-us__message-button">Напишите нам</button>
+                <button class="button contact-us__message-button">Напишите нам</button>
             </div>     
         </div>
         
@@ -195,29 +213,35 @@
     <footer class="footer">
         <div class="container">
             <div class="footer__wrapper">
-                <img class="footer__logo" src="img/logo-footer.svg" alt="MISHKA">
+                <p class="footer__logo">
+                    <a href="index.html" class="footer__logo-link">
+                        <svg width="102" height="34" fill="currentColor" class="footer__logo-img">
+                            <use xlink:href="img/sprite.svg#logoFooter"></use>
+                    </svg>
+                </p>
+                </a>
                 <ul class="footer__social social">
                     <li class="social__item"><a class="social__link" href="">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="21.769px" height="21.334px" viewBox="53.115 53.19 21.769 21.334" enable-background="new 53.115 53.19 21.769 21.334" xml:space="preserve" class="social__icon">
-                            <use xlink:href="img/icon-insta.svg#instagram"></use>
+                        <svg width="22" height="22" fill="currentColor" class="social__img">
+                            <use xlink:href="img/sprite.svg#instagram"></use>
                         </svg>
                     </a></li>
                     <li class="social__item"><a class="social__link" href="">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="14.962px" height="27.718px" viewBox="56.519 49.996 14.962 27.718" enable-background="new 56.519 49.996 14.962 27.718" xml:space="preserve" class="social__icon">
-                            <use xlink:href="img/icon-fb.svg#facebook"></use>
+                        <svg width="15" height="28" fill="currentColor" class="social__img">
+                            <use xlink:href="img/sprite.svg#facebook"></use>
                         </svg>
                     </a></li>
                     <li class="social__item"><a class="social__link" href="">
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="23.494px" height="20.168px" viewBox="52.253 53.771 23.494 20.168" enable-background="new 52.253 53.771 23.494 20.168" xml:space="preserve" class="social__icon">
-                            <use xlink:href="img/icon-twitter.svg#twitter"></use>
+                        <svg width="24" height="20" fill="currentColor" class="social__img">
+                            <use xlink:href="img/sprite.svg#twitter"></use>
                         </svg>
                     </a></li>
                 </ul>
                 <p class="footer__copyright">
                     <a class="footer__copyright-link" href="">
                         <span class="footer__copyright-text">Разработано</span>
-                        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="26.943px" height="34.09px" viewBox="0 0 26.943 34.09" enable-background="new 0 0 26.943 34.09" xml:space="preserve" class="footer__copyright-logo" fill="currentColor">
-                            <use xlink:href="img/logo-htmlacademy.svg#htmlacademy"></use>
+                        <svg width="27" height="34" fill="currentColor" class="footer__copyright-logo">
+                            <use xlink:href="img/sprite.svg#htmlacademy"></use>
                         </svg>
                     </a>
                 </p>

@@ -71,6 +71,8 @@
             right: 28px;
         }
     }
+
+    
 }
 
 .promo__link {
@@ -82,6 +84,25 @@
     text-decoration: none;
     line-height: 24px;
 }
+
+.promo__item .promo__link:hover {
+    padding-top: 5px;
+}
+
+// .promo__button {
+//     width: 130px;
+//     color: #ffffff;
+//     font-family: OpenSansBold;
+//     font-size: 19px;
+//     text-decoration: none;
+//     line-height: 24px;
+//     background-color: transparent;
+//     border: none;
+    
+//     &:hover {
+//         padding-top: 30px;
+//     }
+// }
 
 @media (min-width: $tablet-width) {
 
@@ -112,6 +133,14 @@
 
         padding: 30px 0 35px 30px;
 
+        // &_interior, &_toys {
+        //     &:hover {
+        //         height: 150px;
+        //     }
+
+        // }
+
+       
     }
 }
 
