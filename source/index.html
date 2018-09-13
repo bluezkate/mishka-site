@@ -14,17 +14,16 @@
         <div class="container">
             <div class="header__wrapper">
                 <div class="header__logo logo">
-                    <a class="logo__link" href="index.html">
+                    <a class="logo__link" href="#">
                         <picture>
                             <source media="(min-width:1150px)" srcset="img/logo-desktop.svg">
                             <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
                             <img class="logo__img" src="img/logo-mobile.svg" alt="MISHKA">
-                        </picture>
-                        
+                        </picture>    
                     </a>
-                    <span class="logo__mobile-menu"></span>
+                    <button id="mobileMenuButton" class="logo__button"></button>
                 </div>
-                <nav class="header__navigation navigation"> 
+                <nav id="navigation" class="header__navigation navigation visually-hidden"> 
                     <ul class="navigation__list">
                         <div class="navigation__links">
                             <li class="navigation__item"><a class="navigation__link" href="catalog.html">Каталог товаров</a></li>
@@ -67,19 +66,16 @@
             <div class="promo__wrapper">
                 <b class="promo__lead">Милые штуки ручной работы для дома</b>
                 <ul class="promo__list">
-                    <li class="promo__item promo__item_interior">
-                        <a class="promo__link" href="">
+                    <a class="promo__link" href="">
+                        <li class="promo__item promo__item_interior">
                             <span class="promo__link-text">Предметы интерьера</span>
-                        </a>
-                    </li>
-                    <li class="promo__item promo__item_toys">
-                        <a class="promo__link" href="">
+                        </li>
+                    </a>
+                    <a class="promo__link" href="">    
+                        <li class="promo__item promo__item_toys">
                             <span class="promo__link-text">Детские игрушки</span>
-                        </a>
-                    </li>
-
-                    <!-- <li class=" promo__item_interior"><button class="promo__button promo__item">Предметы интерьера</button></li>
-                    <li class=" promo__item_toys"><button class="promo__button promo__item">Детские игрушки</button></li> -->
+                        </li>
+                    </a>
                 </ul>
             </div>
             
@@ -110,12 +106,14 @@
                         </tr>
                     </table>
                     <p class="top-product__price" >Цена: 990 руб.</p>
-                    <button class="button top-product__order-button">Заказать</button>
+                    <button id="topOrder" class="button top-product__order-button">Заказать</button>
                 </div>   
                 <picture class="top-product__image">
-                    <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg">
-                    <source media="(min-width:768px)" srcset="img/triple-set-tablet@1x.jpg">
-                    <img src="img/triple-set-mobile@1x.jpg" alt="Фото товара"> 
+                    <source media="(min-width:1150px)" srcset="img/triple-set-desktop@1x.jpg 1x, 
+                            img/triple-set-desktop@2x.jpg 2x">
+                    <source media="(min-width:768px)" 
+                    srcset="img/triple-set-tablet@1x.jpg 1x,       img/triple-set-tablet@2x.jpg 2x">
+                    <img src="img/triple-set-mobile@1x.jpg" srcset="img/triple-set-mobile@2x.jpg 2x" alt="Фото товара"> 
                 </picture>
                 
             </div>
@@ -187,9 +185,9 @@
                 </div>     
                 <div class="contact-us__map-wrapper">
                     <picture class="contact-us__map-img">
-                        <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg">
-                        <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg">
-                        <img src="img/map-mobile@1x.jpg" alt="Адрес на карте" >
+                        <source media="(min-width: 1150px)" srcset="img/map-desktop@1x.jpg 1x, img/map-desktop@2x.jpg 2x">
+                        <source media="(min-width: 768px)" srcset="img/map-tablet@1x.jpg 1x, img/map-tablet@2x.jpg 2x">
+                        <img src="img/map-mobile@1x.jpg" srcset="img/map-mobile@2x.jpg 2x" alt="Адрес на карте" >
                     </picture>
                     
                 </div>
@@ -200,13 +198,27 @@
         
     </section>
 
-    <section class="modal visually-hidden">
+    <section id="modal" class="modal visually-hidden">
         <form>
-            <h5>Добавить в корзину</h5>
-            <label for="sizeS"><input type="checkbox" name="input_size" id="sizeS">S</label>
-            <label for="sizeM"><input type="checkbox" name="input_size" id="sizeM">M</label>
-            <label for="sizeL"><input type="checkbox" name="input_size" id="sizeL">L</label>
-            <button>Добавить</button>
+            <button id="modalExit" class="modal__close"></button>
+            <h5 class="modal__heading">Добавить в корзину</h5>
+            <span class="modal__text">Выберите размер:</span>
+            <div class="modal__size">
+                <p class="modal__checkbox">
+                    <input class="modal__input_checkbox visually-hidden" id="sizeS" type="checkbox" name="modalSize">
+                    <label class="modal__label_checkbox" for="sizeS">S</label>
+                </p>
+                <p class="modal__checkbox">
+                    <input class="modal__input_checkbox visually-hidden" id="sizeM" type="checkbox" name="modalSize">
+                    <label class="modal__label_checkbox" for="sizeM">M</label>
+                </p>
+                <p class="modal__checkbox">
+                    <input class="modal__input_checkbox visually-hidden" id="sizeL" type="checkbox" name="modalSize">
+                    <label class="modal__label_checkbox" for="sizeL">L</label>
+                </p>
+            </div>
+            
+            <button class="button modal__button">Добавить</button>
         </form>
     </section>
 
@@ -250,5 +262,7 @@
         </div>
         
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

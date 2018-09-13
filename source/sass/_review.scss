@@ -80,6 +80,21 @@
     .review .container {
         background-image: url('/img/review@1x.jpg');
         background-repeat: no-repeat;
+        background-size: 350px auto;
+
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            width: 100%;
+            height: 25px;
+            background-image: url('/img/bg-zigzag-line.svg');
+            background-repeat: repeat-x;
+            background-size: 100%;
+
+            left: 0;
+            bottom: -100px;
+        }
     }
 
     .review__wrapper {
@@ -118,6 +133,13 @@
         width: 175px;
         right: 0;
         top: 80px;
+    }
+
+    @media (min-resolution: 2dppx) {
+        .review .container {
+            background-image: url('/img/review@2x.jpg');
+            background-size: 350px auto;
+        }
     }
 }
 

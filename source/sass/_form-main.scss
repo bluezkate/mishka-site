@@ -201,6 +201,20 @@
     color: #62d1ba;
 }
 
+
+.form__phone-title 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+input[type='number'] {
+    -moz-appearance:textfield;
+    
+}
+
 .form__phone-title, .form__email-title {
     margin-bottom: 0px;
 }
@@ -240,6 +254,7 @@
     resize: none;
 
     border: solid 2px #444444;
+    background-color: transparent;
 
     &:hover, &:focus {
         border-color: #62d1ba;

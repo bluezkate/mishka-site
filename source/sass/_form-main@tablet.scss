@@ -4,6 +4,21 @@
     .form__heading {
         width: 768px;
         margin-bottom: 80px;
+
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            width: 785px;
+            height: 25px;
+            background-image: url('/img/bg-zigzag-fill.svg');
+            background-repeat: repeat-x;
+            background-size: 100%;
+
+            left: -4px;
+            bottom: -5px;
+        }
     }
 
     .form__heading-text {

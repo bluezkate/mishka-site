@@ -19,9 +19,8 @@
                             <source media="(min-width:768px)" srcset="img/logo-tablet.svg">
                             <img class="logo__img" src="img/logo-mobile.svg" alt="MISHKA">
                         </picture>
-                        
                     </a>
-                    <span class="logo__mobile-menu"></span>
+                    <button id="mobileMenuButton" class="logo__button"></button>
                 </div>
                 <nav class="header__navigation navigation"> 
                     <ul class="navigation__list">
@@ -70,9 +69,9 @@
                 <ul class="catalog__list">
                     <li class="catalog__item">
                         <picture>
-                            <source media="(min-width:1150px)" srcset="img/photo-hare-desktop@1x.jpg">
-                            <source media="(min-width:768px)" srcset="img/photo-hare-tablet@1x.jpg">
-                            <img class="catalog__img" src="img/photo-hare-mobile@1x.jpg" alt="Зайчик-попрыгайчик">
+                            <source media="(min-width:1150px)" srcset="img/photo-hare-desktop@1x.jpg 1x, img/photo-hare-desktop@2x.jpg 2x">
+                            <source media="(min-width:768px)" srcset="img/photo-hare-tablet@1x.jpg 1x, img/photo-hare-tablet@2x.jpg 2x">
+                            <img class="catalog__img" src="img/photo-hare-mobile@1x.jpg"    srcset="img/photo-hare-mobile@2x.jpg 2x" alt="Зайчик-попрыгайчик">
                         </picture>
                         <div class="catalog__info">
                             <p class="catalog__description">
@@ -89,9 +88,9 @@
                     </li>
                     <li class="catalog__item">
                         <picture>
-                            <source media="(min-width:1150px)" srcset="img/photo-bowl-desktop@1x.jpg">
-                            <source media="(min-width:768px)" srcset="img/photo-bowl-tablet@1x.jpg">
-                            <img class="catalog__img" src="img/photo-bowl-mobile@1x.jpg" alt="Корзинка для белья">
+                            <source media="(min-width:1150px)" srcset="img/photo-bowl-desktop@1x.jpg 1x, img/photo-bowl-desktop@2x.jpg 2x">
+                            <source media="(min-width:768px)" srcset="img/photo-bowl-tablet@1x.jpg 1x, img/photo-bowl-tablet@2x.jpg 2x">
+                            <img class="catalog__img" src="img/photo-bowl-mobile@1x.jpg" srcset="img/photo-bowl-mobile@2x.jpg 2x" alt="Корзинка для белья">
                         </picture>
                         <div class="catalog__info">
                             <p class="catalog__description">
@@ -108,9 +107,9 @@
                     </li>
                     <li class="catalog__item">
                         <picture>
-                            <source media="(min-width:1150px)" srcset="img/photo-toys-desktop@1x.jpg">
-                            <source media="(min-width:768px)" srcset="img/photo-toys-tablet@1x.jpg">
-                            <img class="catalog__img" src="img/photo-toys-mobile@1x.jpg" alt="Большая корзинка для игрушек">
+                            <source media="(min-width:1150px)" srcset="img/photo-toys-desktop@1x.jpg 1x, img/photo-toys-desktop@2x.jpg 2x">
+                            <source media="(min-width:768px)" srcset="img/photo-toys-tablet@1x.jpg 1x, img/photo-toys-tablet@2x.jpg 2x">
+                            <img class="catalog__img" src="img/photo-toys-mobile@1x.jpg" srcset="img/photo-toys-mobile@2x.jpg 2x" alt="Большая корзинка для игрушек">
                         </picture>
                         <div class="catalog__info">
                             <p class="catalog__description catalog__description_odd">
@@ -136,9 +135,9 @@
                 <div class="production__wrapper">
                     <div class="production__video">
                         <picture>
-                            <source media="(min-width:1150px)" srcset="img/video-desktop@1x.jpg">
-                            <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg">
-                            <img class="production__video-mock" src="img/video-mobile@1x.jpg" alt="Видео производства">
+                            <source media="(min-width:1150px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+                            <source media="(min-width:768px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+                            <img class="production__video-mock" src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео производства">
                         </picture>
                         <button class="production__video-button"></button>
                     </div>
@@ -151,6 +150,31 @@
                 </div>  
             </div>            
         </section> 
+
+        <section id="modal" class="modal visually-hidden">
+            <form>
+                <button id="modalExit" class="modal__close"></button>
+                <h5 class="modal__heading">Добавить в корзину</h5>
+                <span class="modal__text">Выберите размер:</span>
+                <div class="modal__size">
+                    <p class="modal__checkbox">
+                        <input class="modal__input_checkbox visually-hidden" id="sizeS" type="checkbox" name="modalSize">
+                        <label class="modal__label_checkbox" for="sizeS">S</label>
+                    </p>
+                    <p class="modal__checkbox">
+                        <input class="modal__input_checkbox visually-hidden" id="sizeM" type="checkbox" name="modalSize">
+                        <label class="modal__label_checkbox" for="sizeM">M</label>
+                    </p>
+                    <p class="modal__checkbox">
+                        <input class="modal__input_checkbox visually-hidden" id="sizeL" type="checkbox" name="modalSize">
+                        <label class="modal__label_checkbox" for="sizeL">L</label>
+                    </p>
+                </div>
+                
+                <button class="button modal__button">Добавить</button>
+            </form>
+        </section>
+        
     </main>
 
     <footer class="footer">
@@ -193,5 +217,7 @@
         </div>
         
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

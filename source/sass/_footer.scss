@@ -28,7 +28,7 @@
 }
 
 .social__img {
-    color: #231F20;
+    color: #221f1f;
 }
 
 .social__link:hover .social__img{
@@ -68,7 +68,7 @@
         display: block;
         padding: 53px 0;
         margin: 0;
-        // margin-right: 70px;
+        margin-right: 160px;
     }
 
     .footer__logo-img {
@@ -86,12 +86,12 @@
 
     .footer__wrapper {
         flex-direction: row;
-        justify-content: space-between;
         align-items: center;
     }
 
     .social {
         width: 140px;
+        margin-right: 80px;
         justify-content: space-between;
         padding: 0px;
         border: none;
@@ -110,4 +110,14 @@
         color: #46c1ae;
     }
 
+}
+
+@media (min-width: $desktop-width) {
+    .footer__logo {
+        margin-right: 350px;
+    }
+
+    .social {
+        margin-right: 275px;
+    }
 }

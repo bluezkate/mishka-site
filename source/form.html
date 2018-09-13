@@ -21,7 +21,7 @@
                         </picture>
                         
                     </a>
-                    <span class="logo__mobile-menu"></span>
+                    <button id="mobileMenuForm" class="logo__button"></button>
                 </div>
                 <nav class="header__navigation navigation"> 
                     <ul class="navigation__list">
@@ -178,7 +178,7 @@
                     <div class="form__data form__phone">
                         <b class="form__title form__phone-title">Тел</b>
                         <p class="form__input form__input_phone">
-                            <input type="text" class="form__input_text" placeholder="+7 XXX XX XX*">
+                            <input type="number" class="form__input_text" placeholder="+7 XXX XX XX*">
                             <svg width="25" height="25" class="form__input-icon form__input-icon_phone" fill="currentColor">
                                 <use xlink:href="img/sprite.svg#phone"></use>
                             </svg>
@@ -217,6 +217,30 @@
                 </div>
             </div>
 
+        </section>
+        
+        <section id="modal" class="modal visually-hidden">
+            <form>
+                <button id="modalExit" class="modal__close"></button>
+                <h5 class="modal__heading">Добавить в корзину</h5>
+                <span class="modal__text">Выберите размер:</span>
+                <div class="modal__size">
+                    <p class="modal__checkbox">
+                        <input class="modal__input_checkbox visually-hidden" id="sizeS" type="checkbox" name="modalSize">
+                        <label class="modal__label_checkbox" for="sizeS">S</label>
+                    </p>
+                    <p class="modal__checkbox">
+                        <input class="modal__input_checkbox visually-hidden" id="sizeM" type="checkbox" name="modalSize">
+                        <label class="modal__label_checkbox" for="sizeM">M</label>
+                    </p>
+                    <p class="modal__checkbox">
+                        <input class="modal__input_checkbox visually-hidden" id="sizeL" type="checkbox" name="modalSize">
+                        <label class="modal__label_checkbox" for="sizeL">L</label>
+                    </p>
+                </div>
+                
+                <button class="button modal__button">Добавить</button>
+            </form>
         </section>
         
     </main>
@@ -261,5 +285,7 @@
         </div>
         
     </footer>
+
+    <script src="js/app.js"></script>
 </body>
 </html>

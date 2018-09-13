@@ -4,6 +4,8 @@
     margin: 0 auto;
 
     margin-bottom: 30px;
+
+    
 }
 
 .catalog__heading-title {
@@ -80,8 +82,24 @@
 }
 
 @media (min-width: $tablet-width) {
+
     .catalog__heading {
         width: 768px;
+
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            z-index: 2;
+            width: 785px;
+            height: 25px;
+            background-image: url('/img/bg-zigzag-fill.svg');
+            background-repeat: repeat-x;
+            background-size: 100%;
+
+            left: -4px;
+            bottom: -5px;
+        }
     }
 
     .catalog__heading-title {
@@ -150,6 +168,15 @@
     .catalog__heading {
         width: 1150px;
         margin-bottom: 130px;
+
+        &:before {
+            
+            width: 1200px;
+            height: 25px;
+
+            left: -10px;
+            bottom: -5px;
+        }
     }
 
     .catalog__list {

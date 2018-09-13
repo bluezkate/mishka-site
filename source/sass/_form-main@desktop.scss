@@ -3,6 +3,15 @@
     .form__heading {
         width: 1150px;
         margin-bottom: 130px;
+
+        &:before {
+            
+            width: 1200px;
+            height: 25px;
+
+            left: -10px;
+            bottom: -5px;
+        }
     }
 
     .form__heading-text {
@@ -77,7 +86,7 @@
 
     .form__input_radio:checked + .radio-indication::before {
 
-        border: 11px solid #62d1ba;
+        border: 10px solid #62d1ba;
     
         top: 14px;
         left: 14px;
